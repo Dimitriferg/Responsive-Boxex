@@ -1,0 +1,46 @@
+body {
+  background: blanchedalmond;
+}
+
+* {
+  border: solid 1px black;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container > div {
+  display: flex;
+  margin: 3%;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  flex-grow: 1;
+}
+
+.b {
+  min-height: 70vh;
+}
+
+@media (min-device-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .a {
+    width: 100%;
+    min-height: 30vh;
+  }
+  .b {
+    width: 60%;
+    min-height: 65vh;
+  }
+  .c {
+    flex-grow: 4;
+    min-height: 78vh;
+  }
+}
